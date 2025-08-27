@@ -15,6 +15,7 @@
   <!--
     - custom css link
   -->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/style-prefix.css">
 
   <!--
@@ -122,73 +123,13 @@
 
   <header>
 
-    <div class="header-top">
-
-      <div class="container">
-
-        <ul class="header-social-container">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="header-alert-news">
-          <p>
-            <b>Free Shipping</b>
-            This Week Order Over - $55
-          </p>
-        </div>
-
-        <div class="header-top-actions">
-
-          <select name="currency">
-
-            <option value="usd">USD &dollar;</option>
-            <option value="eur">EUR &euro;</option>
-
-          </select>
-
-          <select name="language">
-
-            <option value="en-US">English</option>
-            <option value="es-ES">Espa&ntilde;ol</option>
-            <option value="fr">Fran&ccedil;ais</option>
-
-          </select>
-
-        </div>
-
-      </div>
-
-    </div>
-
     <div class="header-main">
 
       <div class="container">
 
-
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo.png" alt="Deepak's logo" width="120" height="36">
+        </a>
 
         <div class="header-search-container">
 
@@ -207,13 +148,13 @@
           </button>
 
           <button class="action-btn">
-            <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">0</span>
+            <ion-icon name="heart-outline" class="wishlist-icon"></ion-icon>
+            <span class="count wishlist-count">0</span>
           </button>
 
           <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
+            <ion-icon name="bag-handle-outline" class="cart-icon"></ion-icon>
+            <span class="count cart-count">0</span>
           </button>
 
         </div>
@@ -473,14 +414,6 @@
             </ul>
           </li>
 
-          <li class="menu-category">
-            <a href="#" class="menu-title">Blog</a>
-          </li>
-
-          <li class="menu-category">
-            <a href="#" class="menu-title">Hot Offers</a>
-          </li>
-
         </ul>
 
       </div>
@@ -496,7 +429,7 @@
       <button class="action-btn">
         <ion-icon name="bag-handle-outline"></ion-icon>
 
-        <span class="count">0</span>
+        <span class="count cart-count">0</span>
       </button>
 
       <button class="action-btn">
@@ -506,7 +439,7 @@
       <button class="action-btn">
         <ion-icon name="heart-outline"></ion-icon>
 
-        <span class="count">0</span>
+        <span class="count wishlist-count">0</span>
       </button>
 
       <button class="action-btn" data-mobile-menu-open-btn>
@@ -2376,7 +2309,7 @@
 
                   <div class="showcase-actions">
 
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
@@ -2388,7 +2321,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
 
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
 
@@ -2432,7 +2365,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2444,7 +2377,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2483,7 +2416,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2495,7 +2428,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2536,7 +2469,7 @@
                   <p class="showcase-badge angle pink">new</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2548,7 +2481,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2587,7 +2520,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2599,7 +2532,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2640,7 +2573,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2652,7 +2585,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2690,7 +2623,7 @@
                   <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2702,7 +2635,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2743,7 +2676,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2755,7 +2688,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2794,7 +2727,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2806,7 +2739,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2847,7 +2780,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2859,7 +2792,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2898,7 +2831,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2910,7 +2843,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2951,7 +2884,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action add-to-wishlist">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2963,7 +2896,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
               
-                    <button class="btn-action">
+                    <button class="btn-action add-to-cart">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
